@@ -18,6 +18,10 @@ designs = {
    ja="モダン金魚", en="Modern Kingyo",
    mja="「金」の字を持つことから、金運の縁起物とされることもあります。",
    men="With 'gold' in its name, the goldfish is sometimes seen as a charm for wealth."),
+ "taka": dict(id=21393955, v="1794888524-4000x4000", h="53e29738f2380cb747763ff932920e58acde9601",
+   ja="モダン鷹", en="Modern Taka",
+   mja="初夢に見ると縁起がいい「一富士二鷹」の鷹。高く飛ぶ姿から、出世の縁起物ともされます。",
+   men="The hawk of 'Ichi-Fuji, Ni-Taka', the luckiest first dreams of the year; its high flight is linked to success."),
  "daruma": dict(id=21317937, v="1794031120-2829x3000", h="b2c39352714f30b535e73b545cbce1a8765e3c29",
    ja="モダンだるま", en="Modern Daruma",
    mja="七転び八起き。願いを込めて片目を入れ、叶ったらもう片方を入れる風習があります。",
@@ -28,15 +32,15 @@ sections = [
  dict(key="wish", ja="願いで選ぶ", en="Choose by wish", groups=[
    dict(ja="商売繁盛・金運", en="Business & fortune", items=["kitsune","sensu","kingyo"]),
    dict(ja="厄除け", en="Warding off bad luck", items=["shishi"]),
-   dict(ja="合格・必勝", en="Success & victory", items=["daruma"]),
+   dict(ja="合格・必勝・出世", en="Success & advancement", items=["daruma","taka"]),
  ]),
  dict(key="gift", ja="贈る相手で選ぶ", en="Choose by occasion", groups=[
    dict(ja="開店・開業のお祝いに", en="Opening a shop or business", items=["kitsune","sensu"]),
-   dict(ja="受験生へ", en="For students facing exams", items=["daruma"]),
-   dict(ja="お正月・新年に", en="New Year", items=["shishi","daruma","sensu"]),
+   dict(ja="受験生へ", en="For students facing exams", items=["daruma","taka"]),
+   dict(ja="お正月・新年に", en="New Year", items=["taka","shishi","daruma"]),
  ]),
  dict(key="season", ja="季節で選ぶ", en="Choose by season", groups=[
-   dict(ja="冬・お正月", en="Winter & New Year", items=["shishi","sensu","daruma"]),
+   dict(ja="冬・お正月", en="Winter & New Year", items=["taka","shishi","daruma"]),
  ]),
 ]
 for k,d in designs.items():
