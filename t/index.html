@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>紋処すず｜願いで選ぶ和モダン雑貨</title>
+<meta name="description" content="縁起物を幾何学で描いた和モダン雑貨。願い・贈る相手・季節から選べます。">
+<style>
+  :root{
+    --kinari:#F3EAD8; --sumi:#1C1C1C; --akane:#B7282E; --ai:#165E83; --kin:#C5A059;
+    --line:rgba(28,28,28,.14); --muted:#5c5650;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--kinari);color:var(--sumi);
+    font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;line-height:1.7}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{padding:40px 0 24px;text-align:center;border-bottom:1px solid var(--line)}
+  .mark{display:inline-block;width:44px;height:44px;border:2px solid var(--sumi);transform:rotate(45deg);margin-bottom:18px;position:relative}
+  .mark::after{content:"";position:absolute;inset:9px;background:var(--akane)}
+  h1{font-size:26px;letter-spacing:.2em;margin:0}
+  .romaji{font-family:Georgia,serif;font-size:12px;letter-spacing:.35em;color:var(--muted);margin-top:4px}
+  .lead{margin:18px auto 0;max-width:30em;font-size:15px}
+  .lang{position:absolute;top:14px;right:16px;font:12px/1 system-ui,sans-serif}
+  .lang button{background:none;border:1px solid var(--line);padding:6px 10px;cursor:pointer;color:var(--sumi)}
+  .lang button[aria-pressed=true]{background:var(--sumi);color:var(--kinari)}
+  nav.tabs{display:flex;gap:8px;justify-content:center;padding:20px 0 8px;flex-wrap:wrap}
+  nav.tabs button{font:inherit;font-size:14px;background:transparent;border:1px solid var(--sumi);
+    padding:8px 16px;cursor:pointer;color:var(--sumi);letter-spacing:.08em}
+  nav.tabs button[aria-selected=true]{background:var(--sumi);color:var(--kinari)}
+  section.group{padding:22px 0 6px}
+  h2{font-size:17px;margin:0 0 12px;display:flex;align-items:center;gap:10px}
+  h2::before{content:"";width:8px;height:8px;background:var(--akane);transform:rotate(45deg);flex:none}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+  a.card{display:block;background:#fffdf8;border:1px solid var(--line);text-decoration:none;color:inherit;
+    transition:transform .15s ease, box-shadow .15s ease}
+  a.card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.08)}
+  a.card .ph{aspect-ratio:1;overflow:hidden;background:#fff}
+  a.card img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.18)}
+  .body{padding:12px 14px 14px;border-top:1px solid var(--line)}
+  .name{font-weight:700;font-size:15px}
+  .meaning{font-size:13px;color:var(--muted);margin:6px 0 10px}
+  .go{font:12px/1 system-ui,sans-serif;color:var(--ai);letter-spacing:.05em}
+  footer{margin-top:36px;padding:26px 0 40px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);text-align:center}
+  footer a{color:var(--sumi)}
+  .follow{display:inline-block;margin:6px 0 14px;padding:10px 18px;border:1px solid var(--sumi);text-decoration:none;color:var(--sumi);font-size:14px}
+  .note{font-size:11px;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="lang" role="group" aria-label="Language">
+  <button data-lang="ja">日本語</button><button data-lang="en">EN</button>
+</div>
+<header class="wrap">
+  <div class="mark" aria-hidden="true"></div>
+  <h1>紋処すず</h1>
+  <div class="romaji">MONDOKORO SUZU</div>
+  <p class="lead" data-i18n="lead"></p>
+</header>
+<main class="wrap">
+  <nav class="tabs" role="tablist"></nav>
+  <div id="content"></div>
+</main>
+<footer class="wrap">
+  <a class="follow" id="follow" target="_blank" rel="noopener" data-i18n="follow"></a>
+  <div data-i18n="ship"></div>
+  <div class="note" data-i18n="note"></div>
+</footer>
+<script>
+const DATA = {"shop": "https://suzuri.jp/Sue-san", "designs": {"kitsune": {"id": 21385942, "v": "1794813922-4000x4000", "h": "5efb16b817048d7f8e4e6cb854bf42f5bc3bea20", "ja": "モダン狐", "en": "Modern Kitsune", "mja": "稲荷の神さまのお使いとされる狐。商売繁盛の願いと結びつけられてきました。", "men": "Messenger of Inari, the deity long associated with prosperity in business.", "img": "https://lens.suzuri.jp/v3/400x400/can-badge/75mm/white/front/21385942/1794813922-4000x4000.png.png?h=5efb16b817048d7f8e4e6cb854bf42f5bc3bea20&printed=true", "url": "https://suzuri.jp/Sue-san/designs/21385942"}, "shishi": {"id": 21384054, "v": "1794799838-4000x4000", "h": "2e39aa58db8f1af0a38283c29a2ca3bb8b6469c3", "ja": "モダン獅子", "en": "Modern Shishi", "mja": "獅子舞の獅子に頭をかんでもらうと、厄が払われると言われています。", "men": "A bite from the shishi lion dancer is said to ward off bad luck.", "img": "https://lens.suzuri.jp/v3/400x400/can-badge/75mm/white/front/21384054/1794799838-4000x4000.png.png?h=2e39aa58db8f1af0a38283c29a2ca3bb8b6469c3&printed=true", "url": "https://suzuri.jp/Sue-san/designs/21384054"}, "sensu": {"id": 21333568, "v": "1794217768-4000x4000", "h": "c33400e1bab6e668874783aa7823a3990c8f8683", "ja": "モダン扇子", "en": "Modern Sensu", "mja": "開くと末広がりになる形から、繁栄の縁起物とされています。", "men": "Its shape widens as it opens, so the fan is a symbol of growing prosperity.", "img": "https://lens.suzuri.jp/v3/400x400/can-badge/75mm/white/front/21333568/1794217768-4000x4000.png.png?h=c33400e1bab6e668874783aa7823a3990c8f8683&printed=true", "url": "https://suzuri.jp/Sue-san/designs/21333568"}, "kingyo": {"id": 21319983, "v": "1794049705-2958x3000", "h": "ffcfba2ce3d2be1b97e40a05671f1a0fd36f9bdc", "ja": "モダン金魚", "en": "Modern Kingyo", "mja": "「金」の字を持つことから、金運の縁起物とされることもあります。", "men": "With 'gold' in its name, the goldfish is sometimes seen as a charm for wealth.", "img": "https://lens.suzuri.jp/v3/400x400/can-badge/75mm/white/front/21319983/1794049705-2958x3000.png.png?h=ffcfba2ce3d2be1b97e40a05671f1a0fd36f9bdc&printed=true", "url": "https://suzuri.jp/Sue-san/designs/21319983"}, "daruma": {"id": 21317937, "v": "1794031120-2829x3000", "h": "b2c39352714f30b535e73b545cbce1a8765e3c29", "ja": "モダンだるま", "en": "Modern Daruma", "mja": "七転び八起き。願いを込めて片目を入れ、叶ったらもう片方を入れる風習があります。", "men": "Fall seven times, rise eight. One eye is painted when you make a wish, the other when it comes true.", "img": "https://lens.suzuri.jp/v3/400x400/can-badge/75mm/white/front/21317937/1794031120-2829x3000.png.png?h=b2c39352714f30b535e73b545cbce1a8765e3c29&printed=true", "url": "https://suzuri.jp/Sue-san/designs/21317937"}}, "sections": [{"key": "wish", "ja": "願いで選ぶ", "en": "Choose by wish", "groups": [{"ja": "商売繁盛・金運", "en": "Business & fortune", "items": ["kitsune", "sensu", "kingyo"]}, {"ja": "厄除け", "en": "Warding off bad luck", "items": ["shishi"]}, {"ja": "合格・必勝", "en": "Success & victory", "items": ["daruma"]}]}, {"key": "gift", "ja": "贈る相手で選ぶ", "en": "Choose by occasion", "groups": [{"ja": "開店・開業のお祝いに", "en": "Opening a shop or business", "items": ["kitsune", "sensu"]}, {"ja": "受験生へ", "en": "For students facing exams", "items": ["daruma"]}, {"ja": "お正月・新年に", "en": "New Year", "items": ["shishi", "daruma", "sensu"]}]}, {"key": "season", "ja": "季節で選ぶ", "en": "Choose by season", "groups": [{"ja": "冬・お正月", "en": "Winter & New Year", "items": ["shishi", "sensu", "daruma"]}]}]};
+const T = {
+  ja:{lead:"縁起物や伝統文様を、幾何学で描きなおした和モダン雑貨。願い・贈る相手・季節から選べます。",
+      follow:"ショップをフォローする（新作の通知が届きます）",
+      ship:"海外からもご購入いただけます（WorldShopping などの購入代行サービス経由）。",
+      note:"由来や意味は一般に言われている説をご紹介しています（諸説あります）。",
+      go:"グッズを見る →"},
+  en:{lead:"Japanese lucky charms and traditional patterns, redrawn in modern geometric style. Choose by wish, occasion, or season.",
+      follow:"Follow the shop on SUZURI",
+      ship:"International shipping available via proxy services such as WorldShopping.",
+      note:"Meanings reflect commonly told traditions; interpretations vary.",
+      go:"See items →"}
+};
+// 経路：/t Threads, /p Pinterest, /pe Pinterest(EN), /y YouTube, /tt TikTok
+const seg = new URLSearchParams(location.search).get("r") || location.pathname.split("/").filter(Boolean).pop() || "";
+const ROUTE = ["t","p","pe","y","tt"].includes(seg) ? seg : "direct";
+let lang = (ROUTE==="pe" || !/^ja/i.test(navigator.language||"ja")) ? "en" : "ja";
+try{ const s=localStorage.getItem("suzu-lang"); if(s) lang=s; }catch(e){}
+let tab = DATA.sections[0].key;
+
+function track(name){ // 外部計測（GoatCounter など）が設定されていれば記録
+  try{ if(window.goatcounter && window.goatcounter.count)
+    window.goatcounter.count({path: name+"/"+ROUTE, title: name, event: true}); }catch(e){}
+}
+function render(){
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(el=>el.textContent=T[lang][el.dataset.i18n]);
+  document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.lang===lang));
+  const follow=document.getElementById("follow"); follow.href=DATA.shop;
+  follow.onclick=()=>track("follow");
+  const nav=document.querySelector("nav.tabs"); nav.innerHTML="";
+  DATA.sections.forEach(s=>{
+    const b=document.createElement("button"); b.role="tab"; b.textContent=s[lang];
+    b.setAttribute("aria-selected", s.key===tab); b.onclick=()=>{tab=s.key; render();};
+    nav.appendChild(b);
+  });
+  const sec=DATA.sections.find(s=>s.key===tab), box=document.getElementById("content"); box.innerHTML="";
+  sec.groups.forEach(g=>{
+    const el=document.createElement("section"); el.className="group";
+    el.innerHTML=`<h2>${g[lang]}</h2><div class="cards"></div>`;
+    g.items.slice(0,3).forEach(k=>{
+      const d=DATA.designs[k], a=document.createElement("a");
+      a.className="card"; a.href=d.url; a.target="_blank"; a.rel="noopener";
+      a.innerHTML=`<div class="ph"><img src="${d.img}" alt="${d[lang]}" loading="lazy"></div>
+        <div class="body"><div class="name">${d[lang]}</div>
+        <div class="meaning">${lang==="ja"?d.mja:d.men}</div><div class="go">${T[lang].go}</div></div>`;
+      a.onclick=()=>track("out-"+k);
+      el.querySelector(".cards").appendChild(a);
+    });
+    box.appendChild(el);
+  });
+}
+document.querySelectorAll(".lang button").forEach(b=>b.onclick=()=>{
+  lang=b.dataset.lang; try{localStorage.setItem("suzu-lang",lang)}catch(e){} render();});
+render();
+</script>
+</body>
+</html>
