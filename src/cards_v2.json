@@ -1,0 +1,161 @@
+{
+  "_schema": "v2: 作品データと表示テンプレートを分離。art_path は ART_DIR（環境変数、既定 ../art）からの相対パス。原本PNGはリポジトリに置かない",
+  "kitsune": {
+    "id": "WM-kitsune",
+    "suzuri_material_id": 21385942,
+    "title_ja": "稲荷狐",
+    "title_en": "INARI KITSUNE",
+    "keyword_ja": "稲荷神のお使い",
+    "keyword_en": "Messenger of Inari",
+    "body_ja": [
+      "狐は稲荷神のお使いとされます。",
+      "稲荷神は豊穣や商売繁盛の神として",
+      "広く信仰されています。"
+    ],
+    "body_en": [
+      "Foxes are regarded as messengers of Inari,",
+      "a deity associated with harvests",
+      "and prosperity in Japanese tradition."
+    ],
+    "art_path": "kitsune.png",
+    "art_scale": 1.0,
+    "product_title_en": "Inari Kitsune – Japanese Geometric Fox Sticker",
+    "source_notes": [
+      "狐＝稲荷神のお使い：デジタル大辞泉・日本史小辞典（コトバンク）",
+      "稲荷神＝五穀豊穣・商売繁盛：伏見稲荷大社 公式サイト（inari.jp）",
+      "鈴＝祓い清め・魔除け：神社本庁 公式サイト（鈴一般の意味。狐の首鈴固有の由来は出典なし→カードには載せず、使うなら投稿本文で『鈴には魔除けの願いも込められます』）"
+    ],
+    "review_status": "approved_2026-11-17"
+  },
+  "daruma": {
+    "id": "WM-daruma",
+    "suzuri_material_id": 21317937,
+    "title_ja": "願掛けだるま",
+    "title_en": "GANKAKE DARUMA",
+    "keyword_ja": "七転び八起き",
+    "keyword_en": "Fall Seven, Rise Eight",
+    "body_ja": [
+      "願いを込めて片目を入れ、",
+      "成就したらもう片方を入れるとされます。",
+      "倒れても起き上がる不屈の象徴とも。"
+    ],
+    "body_en": [
+      "A wish is made by painting in one eye,",
+      "and the other is filled in when it comes true.",
+      "It is also seen as a symbol of resilience."
+    ],
+    "art_path": "daruma.png",
+    "art_scale": 1.0,
+    "product_title_en": "Gankake Daruma – Japanese Geometric Daruma Sticker",
+    "source_notes": [
+      "片目・両目の願掛け：頭之宮四方神社（地域差あり）",
+      "七転び八起き：起き上がりだるまの一般的解釈（寺社等の直接資料は未確認）"
+    ],
+    "review_status": "approved_2026-11-17"
+  },
+  "sensu": {
+    "id": "WM-sensu",
+    "suzuri_material_id": 21333568,
+    "title_ja": "末広扇",
+    "title_en": "SUEHIRO SENSU",
+    "keyword_ja": "末広がり",
+    "keyword_en": "Ever-Widening Fortune",
+    "body_ja": [
+      "先へ広がる形から「末広がり」と呼ばれ、",
+      "繁栄を願う縁起物とされます。",
+      "麻の葉には子の成長を願う意味も。"
+    ],
+    "body_en": [
+      "Its shape, opening wider toward the end,",
+      "is seen as a sign of growing prosperity.",
+      "Hemp-leaf motifs wish for healthy growth."
+    ],
+    "art_path": "sensu.png",
+    "art_scale": 1.15,
+    "product_title_en": "Suehiro Sensu – Japanese Geometric Folding Fan Sticker",
+    "source_notes": [
+      "末広がり＝繁栄：伝統的な吉祥解釈（博物館等の直接資料は未確認）",
+      "麻の葉＝子の成長：文化遺産オンライン、ICU博物館"
+    ],
+    "review_status": "approved_2026-11-17"
+  },
+  "kingyo": {
+    "id": "WM-kingyo",
+    "suzuri_material_id": 21319983,
+    "title_ja": "青海波金魚",
+    "title_en": "SEIGAIHA KINGYO",
+    "keyword_ja": "金運に通じる",
+    "keyword_en": "A Wish for Fortune",
+    "body_ja": [
+      "金魚は金運に通じる縁起物とも言われます。",
+      "うろこの青海波には、",
+      "穏やかな日々が続く願いが込められます。"
+    ],
+    "body_en": [
+      "Goldfish are said to bring good fortune.",
+      "The seigaiha wave scales express a wish",
+      "for calm days that continue on."
+    ],
+    "art_path": "kingyo.png",
+    "art_scale": 1.0,
+    "product_title_en": "Seigaiha Kingyo – Japanese Geometric Goldfish Sticker",
+    "source_notes": [
+      "金魚＝金運：国立国会図書館 電子展示会（中国で金運をもたらす魚とされた説）",
+      "青海波＝平穏が続く願い：一般に紹介される意味（一次資料は追加確認）"
+    ],
+    "review_status": "approved_2026-11-17"
+  },
+  "shishi": {
+    "id": "WM-shishi",
+    "suzuri_material_id": 21384054,
+    "title_ja": "獅子舞",
+    "title_en": "SHISHIMAI",
+    "keyword_ja": "無病息災",
+    "keyword_en": "Wishing for Good Health",
+    "body_ja": [
+      "獅子に頭をかんでもらうのは、",
+      "厄払いと無病息災を願う正月の風習。",
+      "椿は常緑から長寿の象徴とも（諸説あり）。"
+    ],
+    "body_en": [
+      "At New Year, a bite from the lion dancer",
+      "is a custom to ward off bad luck",
+      "and to wish for good health."
+    ],
+    "art_path": "shishi.png",
+    "art_scale": 1.0,
+    "product_title_en": "Shishimai – Japanese Geometric Lion Dance Sticker",
+    "source_notes": [
+      "獅子に頭をかまれる厄払い：政府広報（HIGHLIGHTING Japan）、文化遺産オンライン",
+      "椿＝長寿・吉祥：伊東市（一方で不吉とする風習もあり＝諸説あり）"
+    ],
+    "review_status": "approved_2026-11-17"
+  },
+  "taka": {
+    "id": "WM-taka",
+    "suzuri_material_id": 21393955,
+    "title_ja": "初夢鷹",
+    "title_en": "HATSUYUME TAKA",
+    "keyword_ja": "一富士二鷹三茄子",
+    "keyword_en": "A Lucky First Dream",
+    "body_ja": [
+      "初夢に見ると縁起がよいとされる",
+      "「一富士二鷹三茄子」の鷹。",
+      "添えた松は長寿の象徴とされます。"
+    ],
+    "body_en": [
+      "In Japan, a hawk is one of the luckiest",
+      "sights in the first dream of the year.",
+      "The pine stands for long life."
+    ],
+    "art_path": "taka.png",
+    "art_scale": 1.0,
+    "product_title_en": "Hatsuyume Taka – Japanese Geometric Hawk Sticker",
+    "source_notes": [
+      "一富士二鷹三茄子：山梨県立図書館（レファレンス協同データベース）",
+      "松＝長寿：松竹梅の吉祥文（文化遺産オンライン。長寿との直接説明は未確認）",
+      "鷹＝『高い』の語呂合わせ：諸説あり→カードには載せていない"
+    ],
+    "review_status": "approved_2026-11-17"
+  }
+}
