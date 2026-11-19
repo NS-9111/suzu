@@ -157,5 +157,69 @@
       "鷹＝『高い』の語呂合わせ：諸説あり→カードには載せていない"
     ],
     "review_status": "approved_2026-11-17"
+  },
+  "tengu": {
+    "id": "WM-tengu",
+    "suzuri_material_id": 21411948,
+    "title_ja": "もみじ天狗",
+    "title_en": "MOMIJI TENGU",
+    "keyword_ja": "魔除けの縁起物",
+    "keyword_en": "A Charm Against Evil",
+    "body_ja": [
+      "山の守り神として祀られる土地もある天狗。",
+      "魔除けの縁起物とも言われます。"
+    ],
+    "body_en": [
+      "Tengu, mountain spirits in Japanese folklore,",
+      "are sometimes seen as charms",
+      "against evil."
+    ],
+    "art_path": "tengu.png",
+    "art_scale": 1.0,
+    "source_notes": ["説明は src/build.py の mja / men（社長指定文面）と同一。改行のみ調整。"],
+    "review_status": "approved_2026-11-19"
+  },
+  "kame": {
+    "id": "WM-kame",
+    "suzuri_material_id": 21412556,
+    "title_ja": "万年亀",
+    "title_en": "MANNEN KAME",
+    "keyword_ja": "長寿の縁起物",
+    "keyword_en": "A Symbol of Long Life",
+    "body_ja": [
+      "「鶴は千年、亀は万年」と言われる、",
+      "長寿の縁起物です。"
+    ],
+    "body_en": [
+      "\"Cranes live a thousand years,",
+      "turtles ten thousand\" — a classic",
+      "symbol of long life."
+    ],
+    "art_path": "kame.png",
+    "art_scale": 1.0,
+    "source_notes": ["説明は src/build.py の mja / men（社長指定文面）と同一。改行のみ調整。"],
+    "review_status": "approved_2026-11-19"
+  },
+  "usagi": {
+    "id": "WM-usagi",
+    "suzuri_material_id": 21412580,
+    "title_ja": "からくり兎",
+    "title_en": "KARAKURI USAGI",
+    "keyword_ja": "縁結びと飛躍",
+    "keyword_en": "Relationships & Progress",
+    "body_ja": [
+      "『古事記』の因幡の白兎は、大国主神と八上姫の",
+      "縁を結んだとされ、縁結びの縁起物とされます。",
+      "跳ねる姿から「飛躍」の象徴とも言われます。"
+    ],
+    "body_en": [
+      "In Japanese myth, the White Hare of Inaba brought two",
+      "deities together, so rabbits are seen as charms for good",
+      "relationships — and their leaps as a sign of progress."
+    ],
+    "art_path": "usagi.png",
+    "art_scale": 1.0,
+    "source_notes": ["説明は src/build.py の mja / men（社長指定文面）と同一。改行のみ調整。"],
+    "review_status": "approved_2026-11-19"
   }
 }
